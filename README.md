@@ -5,7 +5,7 @@
 **Semester:** 5th <br>
 **Branch:** Information Science and Engineering <br>
 **Email:** dwivedishreyash79@gmail.com
-
+**github:** https://github.com/atmoic77/
 
 ## A Vision Transformer implemented entirely from scratch in PyTorch — patch embedding, positional
 embeddings, CLS token, multi-head self-attention, MLP, residual connections, and layer
