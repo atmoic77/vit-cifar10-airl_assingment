@@ -57,7 +57,6 @@ epochs 158–200; Ablation A epochs 1–100 and resumed portions; Ablation B ful
 ---
 
 ## 2. Architecture overview
-![Architecture diagram](arch.jpeg)
 
 ```
                     ┌─────────────┐
