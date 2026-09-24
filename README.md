@@ -4,7 +4,7 @@
 **College:** The National Institute of Engineering, Mysuru <br>
 **Semester:** 5th <br>
 **Branch:** Information Science and Engineering <br>
-**Email:** dwivedishreyash79@gmail.com
+**Email:** dwivedishreyash79@gmail.com <br>
 **github:** https://github.com/atmoic77/
 
 ## A Vision Transformer implemented entirely from scratch in PyTorch — patch embedding, positional
