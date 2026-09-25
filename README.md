@@ -176,13 +176,17 @@ baseline at the 100-epoch checkpoint) — this is noted at the relevant cell in 
 1. Open `vit_cifar10.ipynb` in Google Colab.
 2. **Runtime → Change runtime type → GPU (T4)**.
 3. Run all cells top to bottom (**Runtime → Run all**). The notebook will:
-   - Mount Google Drive (for checkpoint storage/reads — you will be prompted to authorize).
+   - Download all pre-trained checkpoints (`best_model.pt` and `latest.pt` for baseline,
+     Ablation A, and Ablation B) directly from publicly shared Google Drive links via `gdown`
+     — no personal Google account authorization or Drive access required.
    - Build and unit-test each architecture component (attention, LayerNorm, patch embedding, etc.).
-   - Load CIFAR-10 and construct the 45k/5k/10k split.
-   - Load pre-trained checkpoints (baseline and Ablation A final weights) for live verification
-     of the reported results, rather than retraining from scratch.
-4. The final test-accuracy print statements for the baseline and Ablation A are genuine, live
-   executions against the saved best-model weights — not hardcoded values.
+   - Load CIFAR-10 via `torchvision.datasets.CIFAR10(download=True)` from the official source
+     and construct the 45k/5k/10k split.
+   - Load the downloaded checkpoints for live verification of the reported results, rather than
+     retraining from scratch — the `latest.pt` checkpoints ensure the training-loop cells
+     correctly detect that training is already complete and skip straight to evaluation.
+4. The final test-accuracy print statements for the baseline, Ablation A, and Ablation B are
+   genuine, live executions against the downloaded best-model weights — not hardcoded values.
 5. Ablation-specific cells (patch embedding variant, windowed attention variant) are clearly
    marked with markdown headers and can be run independently of the baseline sections.
 
