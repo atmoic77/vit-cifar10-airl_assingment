@@ -172,7 +172,9 @@ baseline at the 100-epoch checkpoint) — this is noted at the relevant cell in 
 ---
 
 ## 6. How to run this notebook in Colab
-
+<br> <br>
+**Note: the images in the notebook are loaded and disaplayed locally , it is mainly for representation and understanding purpose , while running the vit_cifar10.ipynb file ,the code structres will be full functional but images wont load again ,to refer visuals go through the (.ipynb) file once in starting then run it for further evaluation** 
+<br> <br>
 1. Open `vit_cifar10.ipynb` in Google Colab.
 2. **Runtime → Change runtime type → GPU (T4)**.
 3. Run all cells top to bottom (**Runtime → Run all**). The notebook will:
